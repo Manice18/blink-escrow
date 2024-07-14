@@ -21,6 +21,7 @@ import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { Check, Copy, ExternalLink } from "lucide-react";
 import SolanaExplorer from "../SolanaExplorer";
+import Link from "next/link";
 
 interface EscrowAccount {
   publicKey: PublicKey;
@@ -178,14 +179,30 @@ const DisplayEscrows = () => {
             <CardFooter>
               <div className="w-full">
                 {publicKey?.toBase58() === value.account.maker.toBase58() && (
-                  <div className="flex justify-between">
+                  <div className="flex justify-between space-x-3">
                     <Button
                       variant="destructive"
+                      size="sm"
                       onClick={() => handleRefundEscrow(value.publicKey)}
                     >
                       Refund
                     </Button>
-                    <Button>Share Blink</Button>
+                    <Link
+                      href={`https://dial.to/?action=solana-action:https://blink-escrow.vercel.app/api/actions/${value.publicKey.toBase58()}`}
+                      target="_blank"
+                    >
+                      <Button size="sm">
+                        Share Blink <span className="text-xs">(dial.to)</span>
+                      </Button>
+                    </Link>
+                    <Link
+                      href={`https://blink-escrow.vercel.app/?action=solana-action:https://blink-escrow.vercel.app/api/actions/${value.publicKey.toBase58()}`}
+                      target="_blank"
+                    >
+                      <Button size="sm">
+                        Share Blink <span className="text-xs">(twitter)</span>
+                      </Button>
+                    </Link>
                   </div>
                 )}
                 {publicKey?.toBase58() !== value.account.maker.toBase58() && (
