@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Setting up
 
-## Getting Started
+- Run `npm i` to install all the dependencies
+- Run `npm run dev` to start the local development server
+- Copy the contents from .env.example file to .env file
+- (Optional) you can use a custom RPC URL and put it under the `NEXT_PUBLIC_SOLANA_RPC=` in a .env file
 
-First, run the development server:
+## Usage
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Creating Escrow:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Make sure you are on the home page.
+- Connect your wallet.
+- Enter the address of the token you want to trade.
+- Enter the address of the token you want to receive.
+- Enter their respective amounts.
+- Now click on **Create** button and your escrow will be created.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Sharing your escrow for taking:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Share the on-going page with the person you want to trade with.
+- Alternatively, you can share the dial.to link which opens up the **Blink** for your escrow.
+- You as a seller can refund anytime before it is taken by the person you are trading with.
 
-## Learn More
+## Contract Details:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Contract address: `Dic2Ci9AfyNFJcQCZQb7YJnT8LAPkLA9MJwsQqz4idC3`
+- Repo: https://github.com/Manice18/blink-escrow-contract.git
+- Original: https://github.com/deanmlittle/anchor-escrow-2024
+  (Note: I haven't changed any code from the original contract, just ran on my local machine and got the contract address).

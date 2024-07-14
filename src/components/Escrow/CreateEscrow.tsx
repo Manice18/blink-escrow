@@ -163,7 +163,7 @@ const CreateEscrow = () => {
           className="z-10 w-[150px] space-x-3 self-end px-7 py-6 text-sm"
           type="submit"
         >
-          <span>Continue</span>
+          <span>Create</span>
           <MoveRight size={20} />
         </Button>
       </form>
