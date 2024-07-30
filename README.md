@@ -1,3 +1,7 @@
+![blinkescrow](https://github.com/user-attachments/assets/393940ac-08d7-4e92-bf14-4900824ac4f9)
+
+# Blink Escrow - Web3 Escrow Service with latest Solana Blinks.
+
 ## Setting up
 
 - Run `npm i` to install all the dependencies
@@ -28,3 +32,5 @@
 - Repo: https://github.com/Manice18/blink-escrow-contract.git
 - Original: https://github.com/deanmlittle/anchor-escrow-2024
   (Note: I haven't changed any code from the original contract, just ran on my local machine and got the contract address).
+
+### YT link: https://youtu.be/_eQwcN3Jm1w

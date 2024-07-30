@@ -17,10 +17,12 @@ export default function WalletConnectButton() {
             {!connecting && !connected && !disconnecting && (
               <Wallet className="size-6" />
             )}
-            <p className="whitespace-nowrap text-sm">Connect Wallet</p>
+            <p className="hidden whitespace-nowrap text-sm sm:block">
+              Connect Wallet
+            </p>
           </>
         ) : (
-          <p className="text-sm">
+          <p className="hidden text-sm sm:block">
             {shortenWalletAddress(publicKey.toString())}
           </p>
         )}

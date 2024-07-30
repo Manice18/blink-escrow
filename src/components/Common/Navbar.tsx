@@ -31,7 +31,7 @@ const Navbar = () => {
       className="fixed top-0 z-[99999] flex w-full items-center px-6 py-3"
       ref={menuRef}
     >
-      <div className="max-w-c-1390 relative mx-auto flex w-full items-center justify-between">
+      <div className="relative mx-auto flex w-full max-w-c-1390 items-center justify-between">
         <Link href="/">
           <Logo />
         </Link>
